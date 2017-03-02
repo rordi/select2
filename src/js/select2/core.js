@@ -343,8 +343,7 @@ define([
           evt.preventDefault();
         }
       } else {
-        if (key === KEYS.ENTER || key === KEYS.SPACE ||
-            (key === KEYS.DOWN && evt.altKey)) {
+        if (key === KEYS.ENTER || key === KEYS.SPACE || key === KEYS.UP || key === KEYS.DOWN) { // open widget on Enter, Spacebar or mouse up/down keys
           self.open();
 
           evt.preventDefault();
